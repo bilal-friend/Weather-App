@@ -39,7 +39,7 @@ function submitForm(e) {
       );
       card.classList.add("show");
       let jsData = await myData.json();
-      weatherImg.src = `imgs/${jsData.weather[0].main}.png`;
+      weatherImg.src = `imgs/${jsData.weather[0].main.toLowerCase()}.png`;
       temp.textContent = `${Math.round(jsData.main.temp)}`;
       desc.textContent = jsData.weather[0].description;
       humidity.textContent = `${jsData.main.humidity}%`;
