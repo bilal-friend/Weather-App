@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="font-icon/all.min.css" />
+    <link rel="stylesheet" href="font-icon/fontawesome.min.css" />
+    <link rel="icon" href="imgs/bb.png" type="image/x-icon" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="card">
+      <form>
+        <i class="fa-solid fa-location-dot"></i>
+        <input type="text" placeholder="Enter Your Location" />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </form>
+      <div class="status">
+        <img src="imgs/404.png" />
+        <h4 class="note"></h4>
+      </div>
+      <div class="content">
+        <div class="first">
+          <img />
+          <div class="whether-info">
+            <p class="temp"><span></span><sup>°C</sup></p>
+            <p class="desc"></p>
+          </div>
+        </div>
+        <div class="second">
+          <div>
+            <i class="fa-solid fa-water"></i>
+            <div>
+              <p>Humidity</p>
+              <p class="humidity"></p>
+            </div>
+          </div>
+          <div>
+            <i class="fa-solid fa-wind"></i>
+            <div>
+              <p>Wind Speed</p>
+              <p class="wind-speed"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
